@@ -1,10 +1,17 @@
 import "./App.css";
 import Counter from "./components/Counter";
+import Users from "./components/Users";
 
 function App() {
   return (
     <div>
-      <Counter />
+      <div>
+        <Counter />
+      </div>
+      <br></br>
+      <div>
+        <Users />
+      </div>
     </div>
   );
 }
