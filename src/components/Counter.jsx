@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { counterSelector } from "../store/counter/selectors";
-import { addAmount, decrement, increment, reset } from "../store/counter/slice";
+import { addAmount, decrement, increment, performCounterReset, reset } from "../store/counter/slice";
 
 export default function Counter() {
   //   const [counterValue, setCounterValue] = useState(0);
@@ -32,7 +32,7 @@ export default function Counter() {
         </button>
         <button
           onClick={() => {
-            dispatch(reset());
+            dispatch(performCounterReset());
           }}
         >
           reset
